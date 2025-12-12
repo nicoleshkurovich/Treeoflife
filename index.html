@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Tree of Life: Animated Map</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<div id="landingOverlay">
+  <div class="landingWrapper">
+    <h1 class="landingTitle">Árbol de Vida: A Multidirectional Memory Map</h1>
+    <h2 class="landingByline">by Nicole Shkurovich, Fall 2025</h2>
+    <p class="landingText">
+      Explore a multirectional map of memory and movement, tracing how my family has moved about this world. Click below to explore each of the 18 motifs that pinpoint unique, and often overlapping, times, place, and experience.
+    </p>
+    <button id="enterMapBtn">Enter Map</button>
+  </div>
+</div>
+
+<body>
+  <div id="titleBox">
+    <h1>Tree of Life/Árbol de Vida/עֵץ חַיִּים</h1>
+    <h4>By Nicole Shkurovich</h3>
+  </div>
+
+  <div id="map"><button id="homeButton">Home</button></div>
+ 
+
+  <div id="sidebar">
+    <h2 id="sidebarTitle"></h2>
+    <div id="sidebarContent"></div>
+    <button id="closeSidebar">×</button>
+
+  </div>
+
+  <!-- MUST load the content FIRST -->
+  <script src="sidebarContent.js"></script>
+  <script src="map.js"></script>
+</body>
+</html>
